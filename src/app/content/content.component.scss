@@ -1,0 +1,280 @@
+  /*-------------------------------------------------Preberi več gumb-------------------------------------------------------------------------------*/
+  .latest-travels{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.travel-card {
+    border: 1px solid #ccc;
+    box-shadow: 6px 6px 5px rgb(54, 54, 54);
+    background-color: #e9e6e6;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    height: 520px;
+    vertical-align: bottom;
+}
+
+.travel-card img {
+    width: 50%;
+    height: 329px;
+    border: 1px solid #ccc;
+}
+
+.travel-card h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.travel-card p {
+    font-size: 19px;
+    font-family: Arial, sans-serif;
+    
+    
+}
+
+  #barvica{
+    background-color: rgb(37, 139, 173);
+    box-shadow: 1px 1px 26px 30px rgb(37, 139, 173);
+  }
+   
+   .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    Overflow-y:scroll;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #d80606;
+  }
+  .popup .content {
+    max-height: 50%;
+    overflow: auto;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    Overflow-y:scroll;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 100ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #d80606;
+  }
+  .popup .komentarji {
+    max-height: 50%;
+    overflow: auto;
+  }
+
+  .popup .komentarji img{
+    height: 200px;
+    width: 300px;
+
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+  /* Stil za "Preberi več" gumb */
+.read-more-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.read-more-button:hover {
+    transition: 1s;
+    background-color: #236896;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Skrij dodatne informacije, dokler ni gumb "Preberi več" kliknjen */
+.additional-info {
+    display: none;
+    text-align: left;
+}
+
+/* Nastavite oblikovanje za dodatne slike in daljši opis */
+.additional-info img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+#dada{
+    display: block;
+}
+
+/* Razdelki na strani */
+section {
+  padding: 20px;
+}
+
+.ogled-profila{
+  color: #3498db;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.ogled-profila:hover{
+  color: #000000;
+  
+}
+
+.comment-box {
+  width: 500px;
+}
+
+.comment-input {
+  appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #3498db;
+	background: rgba(#1e7de9, .2);
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #000000;
+  width: 500px;
+  height: 24px;
+}
+
+.comment-input:target {
+  width: 600px;
+  padding: 10px;
+  border: white solid 1px;
+  border-bottom: #000000 solid thin;
+}
+
+.comment-submit {
+  background-color: #3498db;
+  color: white;
+  width: 100px;
+  height: 38px;
+  border-radius: 5px;
+  border: #3498db;
+
+}
+
+comment-submit:hover {
+  transition: 1s;
+  background-color: #236896;
+  color: #fff;
+}
+
+.preberi-več {
+  background-color: #ffffff;
+  color: #3498db;
+  font-size: 15px;
+  border: none;
+  width: 150px;
+  height: 45px;
+  transition: .3s;
+  margin: 0 auto; 
+  display: block;
+  cursor: pointer;
+}
+.nic{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.preberi-več:hover {
+  background-color: #3498db;
+  box-shadow: 0 0 0 5px #ffffff5f;
+  color: #ffffff;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,78 @@
+/*-----------------------------------Kategorije in popotniški nasveti----------------------------------------------------------------------------------------------------*/
+.latest-travels{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+#categories {
+    margin-top: 20px;
+    padding: 20px;
+    
+  }
+  
+  .categories-title {
+    text-align: center;
+      font-size: 2em;
+      margin-bottom: 10px;
+  }
+  
+  .categories-list{
+    text-align: center;
+    margin: 0;
+      padding: 0;
+    list-style: none;
+    
+  }
+  
+  .categories-item {
+        color: #000;
+  
+  }
+  
+  .categories-link {
+      color: #000;
+      text-decoration: none;
+  }
+  
+  .categories-link:hover {
+  color: #3498db;
+  }
+        
+      
+    
+  
+  
+  #travel-tips {
+    margin-top: 20px;
+    padding: 20px;
+   
+  }
+    .travel-tips-title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+  
+    .travel-tips-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+      .travel-tips-item {
+        
+        color: #000;
+      }
+        .travel-tips-link {
+          text-decoration: none;
+          color: #000;
+        }
+        .travel-tips-link:hover {
+            color: #3498db;
+          }
+        
+  /* Razdelki na strani */
+section {
+    padding: 20px;
+}
+  /*------------------------------------------------------------------------------------------------------------------------------------------------*/

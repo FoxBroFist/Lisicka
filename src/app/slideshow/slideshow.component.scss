@@ -1,0 +1,104 @@
+/* ------------------------------------------SLIDE ŠOV-----------------------------------------------------------*/
+
+
+.slider-container{
+    width: 90%;
+    height: 800px; /* can be set based on design */
+    background: red; /* to test if background shows */
+    overflow: hidden; /* to hide slides that are off */
+    position: relative; /* since slides are absolute */
+    box-shadow: 0 2px 10px black;
+    margin: auto;
+    user-select: none;
+  }
+  
+  .slide{
+    /* positioning all slides normal position to full size of slider and in view */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  
+    animation: 12s linear infinite sliderAnimation;
+    /*
+    animation-name: sliderAnimation;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    */
+  
+    border: 0px solid #1d1e22; /* thought it looked good */
+    box-sizing: border-box; /* to keep total width at 100% */
+  
+    box-shadow: inset 0 0 20px black; /* inset shadow on the slides */
+  
+    display: flex;  /* to position the text inside*/
+  }
+  
+  .slide:first-of-type{
+    /* City */
+    background: no-repeat 50% 20%/cover url('https://sensa.metropolitan.si/media/cache/upload/Photo/2017/06/12/photo_1_main-photo_np-plitvice-lakes_i940x530.jpg');
+    /* positioning for the text inside */
+    justify-content: flex-end;
+    align-items: flex-start;
+    animation-delay: -11s;
+  }
+  .slide:nth-of-type(2){
+    /* Nature Bridge */
+    background: no-repeat center/cover url('https://i.imgur.com/qtwGd3b.jpg');
+  
+    /* 12s - 9s = 3s... Will start after 3s */
+    animation-delay: -8s;
+  }
+  
+  .slide:nth-of-type(3){
+    /* Painting */
+    background: no-repeat center/cover url('https://www.gov.si/assets/ministrstva/MOP/fotografije/dogodki/2022/09_September/09_Narava-zdravje-/foto_kolaz_40_let_11Arhiv-TNP__FitWzk4MCw5ODAsImMyYjUwNDkwOGEiXQ.jpg');
+    /* Will start after 6s */
+    animation-delay: -5s;
+  
+    /* positioning for the text inside */
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .slide:last-of-type{
+    /* Coffee */
+    background: no-repeat bottom/cover url('https://www.slovenia.info/imagine_cache/og/uploads/potovalni/nature.jpg');
+    /* Will start after 9s */
+    animation-delay: -2s;
+  
+    /* positioning for the text inside */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes sliderAnimation{
+    /* 4 slides, 20% in place and 5% transition time = 100% */
+    0%{transform: translateX(0); opacity: 1;} /* starts in view */
+    20%{transform: translateX(0); opacity: 1;} /* stays in view */
+    25%{transform: translateX(-100%); opacity: 1;} /* slides out left */
+    70%{transform: translateX(-100%); opacity: 0;} /* Doesn't matter at what percent: changes to transparent so can't see it travel back across to the right. */
+    71%{transform: translateX(100%); opacity: 0;} /* Doesn't matter at what percent: moves off right */
+    95%{transform: translateX(100%); opacity: 1;} /* Becomes transparent and Ready to slide on from the right */
+  }
+  
+  .slide p{
+    /*style for the text*/
+    margin: 5vw;
+    font-size: 3vw;
+    color: white;
+    text-shadow: 0.1vw 0.1vw black;
+    font-family: Arial Black, Georgia, Garamond, Palatino, Trebuchet MS, Verdana;
+  }
+  
+  .slide:last-of-type p{
+    /* because white text on white background */
+    text-shadow: 0 0 15px black;
+  }
+
+  /* Razdelki na strani */
+section {
+  padding: 20px;
+}
+   /*------------------------------------------------------------------------------------------------------------------------------------------------*/
